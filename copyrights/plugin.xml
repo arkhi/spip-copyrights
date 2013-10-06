@@ -1,0 +1,32 @@
+<plugin>
+  <nom>
+    <multi>
+      [fr]Copyrights
+    </multi>
+  </nom>
+  <description>
+    <multi>
+      [en]Display copyrights based on URLS.
+      [fr]Affichez des copyrights en fonction d’une URL.
+    </multi>
+  </description>
+  <auteur>Fabien Basmaison</auteur>
+  <licence>GPL2</licence>
+
+  <version>1.0.0</version>
+  <etat>stable</etat>
+  <prefix>copyrights</prefix>
+
+  <fonctions>inc/copyrights.php</fonctions>
+  <icon>img/copyrights-64.png</icon>
+
+  <necessite id="SPIP" version="[3.0;]" />
+
+  <lien>http://github.com/arkhi/spip-plugins</lien>
+
+  <bouton id="configurer_copyrights" parent="menu_configuration">
+    <icon>img/copyrights-16.png</icon>
+    <titre>copyrights:configuration_copyrights</titre>
+    <url>configurer_copyrights</url>
+  </bouton>
+</plugin>

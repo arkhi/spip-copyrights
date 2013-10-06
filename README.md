@@ -1,4 +1,4 @@
 spip-plugins
 ============
 
-Plugins for SPIP
+These are experiments with plugins for SPIP

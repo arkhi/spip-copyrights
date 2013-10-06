@@ -1,0 +1,27 @@
+<div class="formulaire_spip formulaire_configurer formulaire_#FORM">
+
+  <h3 class="titrem"><:copyrights:titre_copyrights:></h3>
+
+  [<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
+  [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
+
+  <form method="post" action="#ENV{action}">
+    <div>
+      #ACTION_FORMULAIRE{#ENV{action}}
+
+      <ul>
+      	#SET{erreurs,#ENV**{erreurs}|table_valeur{#GET{list_urls}}}
+      	<li class="editer editer_[(#GET{list_urls})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+      		<label for="list_urls"><:copyrights:label_liste_copyrights:></label>
+      		<div class="explication"><:copyrights:explication_liste_copyrights:></div>
+      		[<span class='erreur_message'>(#GET{erreurs})</span>
+      		]<textarea id="list_urls" name="list_urls" type="radio" rows="20">#ENV{list_urls}</textarea>
+      	</li>
+      </ul>
+
+      <input type="hidden" name="_meta_casier" value="copyrights/config" />
+      <p class='boutons'><span class='image_loading'>&nbsp;</span><input type='submit' class='submit' value='<:bouton_enregistrer:>' /></p>
+
+    </div>
+  </form>
+</div>
