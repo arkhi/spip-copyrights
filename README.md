@@ -1,11 +1,7 @@
-spip-plugins
-============
+Copyrights Plugin
+=================
 
-These are experiments with plugins for SPIP
-
-## copyrights
-
-This plugin adds a configuration page to display a copyright automatically, based on a string of text.
+This [SPIP](http://spip.net/) plugin adds a configuration page to display a copyright automatically, based on a string of text.
 It provides a `copyright` filter you can apply on anything.
 
 The configuration options are available from the configuration menu or via `/ecrire/?exec=configurer_copyrights`.
