@@ -4,7 +4,7 @@
  * @param  string $url L’URL de l’article original
  * @return string      Chaîne fournie par l’auteur ou l’éditeur
  */
-if (!function_exists(copyright)) {
+if (!function_exists('copyright')) {
   function copyright($url) {
     $copyright = '';
 
