@@ -1,6 +1,8 @@
 Copyrights Plugin
 =================
 
+**This repository now lives in https://framagit.org/arkhi/spip-copyrights.**
+
 This [SPIP](http://spip.net/) plugin adds a configuration page to display a copyright automatically, based on a string of text.
 It provides a `copyright` filter you can apply on anything.
 
